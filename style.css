@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+
+}
+
+
+:root {
+    --primary-color: rgb(255, 255, 255);
+}
+
+body {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+
+    background-image: url('images/weather.jpg');
+
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.temp_container {
+    min-width: 650px;
+    width: 40vw;
+    min-height: 340px;
+    height: 75vh;
+    border-radius: 36px;
+    backdrop-filter: blur(15px);
+    background: transparent;
+    box-shadow: 5px 5px 9px rgb(255, 255, 255),
+        -5px -5px 9px rgb(255, 255, 255);
+
+    padding: 20px 20px;
+    margin: 20px;
+
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation: fade-in 1s 0.5s forwards;
+
+}
+
+.header {
+    font-family: 'Nunito', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 31px;
+
+
+
+}
+
+.fa-temperature-high {
+    font-size: 70px;
+}
+
+.text_symbol {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    padding: 0 20px;
+    font-size: 60px;
+    margin: 25px 0 15px;
+
+
+}
+
+.temperature_icon {
+    font-size: 70px;
+}
+
+.input_temperature {
+    font-family: 'Nunito', sans-serif;
+
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.icon {
+    margin-left: 12px;
+
+  }
+
+input,
+select {
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 36px;
+    box-shadow: inset 6px 6px 4px rgb(197, 197, 197),
+        inset -6px -6px 4px rgb(251, 251, 251);
+    outline: none;
+    background: rgb(224, 224, 224);
+    margin: 10px 50px 10px 50px;
+
+}
+
+
+select {
+    width: 200px;
+
+    box-shadow: inset 6px 6px 4px rgb(197, 197, 197);
+ 
+}
+
+
+.input_temperature .option .icon {
+    margin-left: 5px;
+}
+.input_temperature .button {
+    margin-top: 45px;
+    text-align: center;
+
+}
+
+
+.input_temperature .button Button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+.input_temperature .button Button:hover {
+    background: rgb(84, 84, 84);
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+
+}

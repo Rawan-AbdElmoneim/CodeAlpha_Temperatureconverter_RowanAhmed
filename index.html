@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <script src="http://kit.fontawesome.com//11c75dba75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="temp_container">
+        <div class="header">
+            <span class="heading">Temperature Converter</span>
+            <span class="icon"><i class="fas fa-temperature-high"></i></span>
+
+        </div>
+        <div class="text_symbol">
+            <span>&#8451 &#8457 &#x212A</span>
+            <span class="temperature_icon"><i class="fas fa-cloud-sun-rain"></i></span>
+        </div>
+
+        <div class="input_temperature">
+
+            <div class="text">
+
+                <input type="text" placeholder="Input" id="input">
+                <input type="text" placeholder="Result" id="result">
+
+            </div>
+            <div class="selector">
+                <select id="inputType">
+
+                    <option value="celsius" class="option">Celsius&nbsp;<span class="icon">&#8451;</span></option>
+                    <option value="fahrenheit" class="option">Fahrenheit&nbsp;<span class="icon">&#8457;</span></option>
+                    <option value="kelvin" class="option">Kelvin&nbsp;<span class="icon">&#x212A;</span></option>
+                </select>
+
+                <select id="resultType">
+                    <option value="celsius">Celsius&nbsp;<span class="icon">&#8451;</span></option>
+                    <option value="fahrenheit">Fahrenheit&nbsp;<span class="icon">&#8457;</span></option>
+                    <option value="kelvin">Kelvin&nbsp;<span class="icon">&#x212A;</span></option>
+                </select>
+            </div>
+            <div class="button">
+                <Button>Clear All</Button>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
